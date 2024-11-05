@@ -24,10 +24,10 @@ struct Trainer {
 
 void combatTour(Pokemon &attacker, Pokemon &defender) {
     if (attacker.hp > 0) {
-        cout << attacker.name << " attacks " << defender.name << " for " << attacker.attack << " damage!" << endl;
+        cout << attacker.name << " attaque " << defender.name << " avec " << attacker.attack << " damages!" << endl;
         defender.hp -= attacker.attack;
         if (defender.hp < 0) defender.hp = 0;
-        cout << defender.name << " has " << defender.hp << " HP left." << endl;
+        cout << defender.name << " a " << defender.hp << " HP restants." << endl;
     }
 }
 
@@ -78,9 +78,9 @@ void combatDresseurs(Trainer &trainer1, Trainer &trainer2) {
     }
 
     if (i < trainer1.pokemons.size()) {
-        cout << trainer1.name << " wins the battle!" << endl;
+        cout << trainer1.name << " gagne la bagarre!" << endl;
     } else {
-        cout << trainer2.name << " wins the battle!" << endl;
+        cout << trainer2.name << " gagne la bagarre!" << endl;
     }
 }
 
